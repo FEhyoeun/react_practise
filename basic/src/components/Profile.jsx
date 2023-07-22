@@ -3,8 +3,7 @@ import ProfileImage from './ProfileImage'
 export default function Profile(props) {
     return (
         <div className='profile'>
-            { props.isNew && (<div className='profile-tag-wrap'><span className='profile-tag-title'>New!</span></div>)}
-            { props.image && <ProfileImage image={ props.image } />}
+            { props.image && <ProfileImage image={ props.image } isNew={ props.isNew } />}
             <h1>{ props.name }</h1>
             <h2>{ props.position }</h2>
         </div>
