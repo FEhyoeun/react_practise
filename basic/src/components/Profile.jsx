@@ -1,12 +1,10 @@
+import ProfileImage from './ProfileImage'
+
 export default function Profile(props) {
     return (
         <div className='profile'>
             { props.isNew && (<div className='profile-tag-wrap'><span className='profile-tag-title'>New!</span></div>)}
-            <img
-                className='profile-image'
-                src={ props.image }
-                alt='profile-image'
-            />
+            { props.image && <ProfileImage image={ props.image } />}
             <h1>{ props.name }</h1>
             <h2>{ props.position }</h2>
         </div>
