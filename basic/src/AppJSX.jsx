@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function AppJSX() {
   const name = 'hyoeun'
   const colors = ['red', 'white', 'green', 'black']
 
@@ -15,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppJSX;
