@@ -1,9 +1,7 @@
 export default function Profile(props) {
     return (
         <div className='profile'>
-            <div style={{ display: props.isNew === 'Y' ? '' : 'none' }} className='profile-tag-wrap'>
-                <span className='profile-tag-title'>New!</span>
-            </div>
+            { props.isNew && (<div className='profile-tag-wrap'><span className='profile-tag-title'>New!</span></div>)}
             <img
                 className='profile-image'
                 src={ props.image }
