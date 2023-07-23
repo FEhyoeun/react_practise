@@ -23,8 +23,11 @@ function AppProfileJsx() {
         }
     ]
 
+    const handleClick = (event) => console.log('event', event)
+
     return (
         <>
+            <button onClick={ handleClick }>클릭</button>
             { profiles.map(profile =>
                 <Profile
                     image={ profile.image }
