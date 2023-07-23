@@ -38,3 +38,29 @@
   height: 200px;
   border-radius: 100%;
 }
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #bbb;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: auto;
+  width: 70%;
+}
+
+.count {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.add-button {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: beige;
+  border-radius: 1rem;
+}
