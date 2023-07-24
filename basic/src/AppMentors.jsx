@@ -76,6 +76,35 @@ function AppMentors() {
       >
         멘토 타이틀 바꾸기
       </button>
+
+      <button
+        onClick={() => {
+          const name = prompt(`추가하고 싶은 사람의 이름이 뭔가요?`)
+          const title = prompt(`추가하고 싶은 사람의 타이틀이 뭔가요?`)
+          setPerson(person => ({
+            ...person,
+            mentors: [
+              ...person.mentors,
+              { name, title }
+            ]
+          }))
+
+        }}
+      >
+        멘토 추가하기
+      </button>
+
+      <button
+        onClick={() => {
+          const target = prompt(`삭제하고 싶은 멘토의 이름이 뭔가요?`)
+          setPerson((person) => ({
+            ...person,
+            mentors: person.mentors.filter(mentor => mentor.name !== target)
+          }))
+        }}
+      >
+        멘토 삭제하기
+      </button>
     </>
   );
 }
