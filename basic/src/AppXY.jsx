@@ -15,7 +15,7 @@ function AppXy() {
 
   return (
     <>
-      <div className='container' onMouseMove={handleMouseMove}>
+      <div className='container' onPointerMove={handleMouseMove}>
         <div
           className='pointer'
           style={{ 'left': pointerStyleObj.pageX, 'top': pointerStyleObj.pageY }}>
